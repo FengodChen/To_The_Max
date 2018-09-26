@@ -2,6 +2,7 @@
 #define MAT_GC_HPP_
 
 class Vec_dat{
+    private:
     // vec[num]
     int * vec;                 
     int num;
@@ -10,6 +11,7 @@ class Vec_dat{
     int start_ptr, end_ptr;
     int max_sum;
 
+    public:
     // Get Vector.
     Vec_dat(int num_);
     ~Vec_dat();
@@ -17,6 +19,13 @@ class Vec_dat{
     void inputVec();
     // Calculate Max sum and two ptr
     void calMax();
+    // Print Vector
+    void printVec();
+    // Get the private variable
+    int getNum();
+    int getStartPtr();
+    int getEndPtr();
+    int getMaxSum();
 };
 
 #endif

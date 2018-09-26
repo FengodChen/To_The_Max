@@ -64,3 +64,25 @@ void Vec_dat::calMax(){
 
     delete left_list, right_list;
 }
+
+void Vec_dat::printVec(){
+    for(int i = 0; i < num; i++)
+        std::cout << vec[i] << " ";
+    std::cout << std::endl;
+}
+
+int Vec_dat::getNum(){
+    return num;
+}
+
+int Vec_dat::getStartPtr(){
+    return start_ptr;
+}
+
+int Vec_dat::getEndPtr(){
+    return end_ptr;
+}
+
+int Vec_dat::getMaxSum(){
+    return max_sum;
+}
