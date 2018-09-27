@@ -64,8 +64,6 @@ void Vec_dat::calMax(){
         sum += vec[i];
     
     max_sum = sum;
-
-    delete left_list, right_list;
 }
 
 void Vec_dat::printVec(){
