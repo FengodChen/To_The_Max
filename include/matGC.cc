@@ -13,6 +13,7 @@ Vec_dat::~Vec_dat(){
 void Vec_dat::inputVec(){
     for(int i = 0; i < num; i++)
         std::cin >> vec[i];
+    calMax();
     return;
 }
 
@@ -100,4 +101,16 @@ void Vec_dat::setEndPtr(int p_){
 void Vec_dat::setMaxSum(int sum_){
     max_sum = sum_;
     return;
+}
+
+void Vec_dat::setVec(int *vc){
+    for(int i = 0; i < num; i++)
+        vec[i] = vc[i];
+    calMax();
+    return;
+}
+
+Vec_dat Vec_dat::operator+(Vec_dat vd){
+    Vec_dat new_vd(num);
+    //TODO
 }

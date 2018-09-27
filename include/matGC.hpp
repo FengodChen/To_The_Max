@@ -30,6 +30,9 @@ class Vec_dat{
     void setStartPtr(int p_);
     void setEndPtr(int p_);
     void setMaxSum(int sum_);
+    void setVec(int *vc);
+    // Operator
+    Vec_dat operator+(Vec_dat vd);
 };
 
 #endif
