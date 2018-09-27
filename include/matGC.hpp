@@ -26,6 +26,10 @@ class Vec_dat{
     int getStartPtr();
     int getEndPtr();
     int getMaxSum();
+    // Set the private variable
+    void setStartPtr(int p_);
+    void setEndPtr(int p_);
+    void setMaxSum(int sum_);
 };
 
 #endif

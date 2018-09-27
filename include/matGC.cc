@@ -86,3 +86,18 @@ int Vec_dat::getEndPtr(){
 int Vec_dat::getMaxSum(){
     return max_sum;
 }
+
+void Vec_dat::setStartPtr(int p_){
+    start_ptr = p_;
+    return;
+}
+
+void Vec_dat::setEndPtr(int p_){
+    end_ptr = p_;
+    return;
+}
+
+void Vec_dat::setMaxSum(int sum_){
+    max_sum = sum_;
+    return;
+}
