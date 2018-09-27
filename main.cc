@@ -8,7 +8,6 @@ int main(int argc, char const *argv[])
     /*
     Vec_dat a(10);
     a.inputVec();
-    a.calMax();
     cout << a.getStartPtr() << "->" << a.getEndPtr() << endl;
     cout << a.getMaxSum() << endl;
     */

@@ -149,6 +149,8 @@ Vec_dat operator+(Vec_dat vd_1, Vec_dat vd_2){
         vd_new.max_sum = 0;
         for(int i = vd_new.start_ptr; i <= vd_new.end_ptr; i++)
             vd_new.max_sum += vd_new.vec[i];
+    }else{
+        vd_new.calMax();
     }
 
     return vd_new;
