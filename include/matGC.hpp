@@ -5,17 +5,15 @@ class Vec_dat{
     private:
     // vec[num]
     int * vec;                 
-    int num;
+    static int num;
     // Max sub_vector in father_vector
     // from vec[start_ptr] to vec[end_ptr].
     int start_ptr, end_ptr;
     int max_sum;
-    // 
-    int *left_list, *right_list;
 
     public:
     // Get Vector.
-    Vec_dat(int num_);
+    Vec_dat();
     ~Vec_dat();
     // Input data to Vector.
     void inputVec();
@@ -24,20 +22,29 @@ class Vec_dat{
     // Print Vector
     void printVec();
     // Get the private variable
-    int getNum();
+    static int getNum();
     int getStartPtr();
     int getEndPtr();
     int getMaxSum();
-    // Set the private variable
-    void setStartPtr(int p_);
-    void setEndPtr(int p_);
-    void setMaxSum(int sum_);
-    void setVec(int *vc);
-    // Friend function
-    friend Vec_dat operator+(Vec_dat vd_1, Vec_dat vd_2);
+    // Static Function
+    //     Set the private variable
+    static void setNum(int num_);
+    //     Add two Vec_dat and return the answer
+    //static Vec_dat& add(Vec_dat vd_1, Vec_dat vd_2);
+
+    static void add(const Vec_dat& vd_1, const Vec_dat& vd_2, Vec_dat& vd_new, bool isCal);
+    // Operator
+    //Vec_dat& operator=(Vec_dat& vd);
 };
 
-// Operator
-Vec_dat operator+(Vec_dat vd_1, Vec_dat vd_2);
+class Mat_dat{
+    private:
+    Vec_dat *mat;
+    static int num;
+
+    public:
+    Mat_dat();
+    
+};
 
 #endif
